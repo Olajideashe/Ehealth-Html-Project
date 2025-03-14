@@ -200,63 +200,79 @@
 .space {
     margin: 20px 0;
 }
-
-#appointment {
+.appointment {
     display: flex;
-    justify-content: right;
-    align-items: right;
-    color: #0c0c0c;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.form {
+    flex: 1;
+    padding: 30px;
+}
+.formflex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.form h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
     text-align: center;
-    padding: 20px
 }
-
-.appointment form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.input {
+    margin-bottom: 15px;
 }
-
-.appointment input,
-.appointment button {
-    padding: 12px;
-    border: 1px solid #rgb(29, 159, 66);
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.appointment input:focus {
-    border-color: #5cb85c;
-    outline: none;
-}
-
-.appointment button {
-    background: #5cb85c;
-    color: rgb(29, 159, 66);
+.form label {
+    display: block;
     font-weight: bold;
-    cursor: pointer;
-    border: none;
+    margin-bottom: 5px;
 }
-
-
-
-
+.form input {
+    width: 100% !important;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgb(204, 199, 199);
+    border: 0.5px solid rgb(204, 199, 199);
+    border-radius: 5px;
+}
+.form textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgb(204, 199, 199);
+    border: 1px solid rgb(204, 199, 199);
+    border-radius: 5px;
+}
+.form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(29, 159, 66);
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+.app img {
+    width: 670px;
+    height: 700px;
+    margin-left: 80px;
+}
 section {
-    padding: 20px;
-    margin: 48px 0;
+    padding: 10px;
+    margin: 28px 0;
 }
 
 .contact p {
     margin: 6px 0;
 }
 
-.openhr {
-    margin-bottom: 20px;
+.openhrs {
+    margin-bottom: 30px;
 }
 
 
