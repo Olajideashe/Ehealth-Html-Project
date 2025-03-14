@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.hori {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topnav {
+    padding: 16px 68px 8px 68px;
+}
+
+.color {
+    color: gray
+}
+
+.graytext {
+    font-size: 12px;
+    color: gray;
+    font-weight: 400;
+}
+
+.info {
+    margin-right: 24px;
+    padding-right: 28px;
+    border-right: 2px solid lightgrey;
+}
+
+#remove {
+    border: none !important
+}
+
+.info span {
+    color: rgb(29, 159, 66);
+    font-weight: 400;
+}
+
+.brandlogo span {
+    color: white;
+    background-color: rgb(29, 159, 66);
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    padding: 4px;
+}
+
+.navitem {
+    list-style: none;
+    padding: 16px 18px;
+}
+
+.navitem a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.navitem a:hover {
+    color: rgb(29, 159, 66);
+}
+
+#app {
+    background-color: rgb(29, 159, 66);
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#app a {
+    color: white !important;
+}
+
+#home {
+    background-image: url(../images/slider3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.hometext1 {
+    font-size: 2rem;
+}
+
+.hometext2 {
+    font-size: 4.5rem;
+    font-weight: 500;
+    margin: 28px 0
+}
+
+#homebutton {
+    background-color: blue;
+    color: aliceblue;
+    padding: 10px;
+}
+
+#about {
+    background-image: url(../images/about-bg.jpg);
+    background-size: cover;
+    min-height: 92vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #070707;
+    text-align: left;
+    padding: 20px
+}
+
+.about {
+    position: relative;
+    left: 100px;
+    top: 55px;
+}
+
+.abouttext1 {
+    font-size: 2.5rem;
+    text-align: justify left;
+    font-style: bold;
+
+}
+
+.abouttext1 span {
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    padding: 4px;
+}
+
+.abouttext2 {
+    font-size: 1rem;
+    font-style: bold;
+    margin: 20px 0;
+}
+
+.details {
+    display: flex;
+    margin: 20px;
+}
+
+.details p {
+    margin: 6px 0;
+}
+
+.details img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.doctorinfo h3 {
+    margin-top: 16px;
+}
+
+.sectiontopic {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.doctorinfo p {
+    margin: 8px 0;
+}
+
+.doctorinfo hr {
+    margin: 16px 0;
+}
+
+.latestnews {
+    text-align: center;
+}
+
+.news-image {
+    width: 410px;
+    height: 295px;
+}
+
+.news hr {
+    margin: 26px 0;
+}
+
+.topic {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.space {
+    margin: 20px 0;
+}
+
+#appointment {
+    background-image: url(../images/appointment-image.jpg);
+    background-size: cover;
+    min-height: 92vh;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    color: #0c0c0c;
+    text-align: center;
+    padding: 20px
+}
+.appointment form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.appointment input, .appointment button {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.appointment input:focus {
+    border-color: #5cb85c;
+    outline: none;
+}
+
+.appointment button {
+    background: #5cb85c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.appointment button:hover {
+    background: #4cae4c;
+}
+
+
+section {
+    padding: 20px;
+    margin: 48px 0;
+}
+
+.contact p {
+    margin: 6px 0;
+}
+
+.openhr {
+    margin-bottom: 20px;
+}
+
+
+
+/* Default styles remain the same */
+
+@media screen and (max-width: 768px) {
+    .hori {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .topnav {
+        padding: 12px 24px;
+    }
+
+    .info {
+        margin-right: 0;
+        padding-right: 0;
+        border-right: none;
+        text-align: center;
+    }
+
+    .navitem {
+        padding: 12px;
+    }
+
+    .hometext1 {
+        font-size: 1.5rem;
+    }
+
+    .hometext2 {
+        font-size: 2.5rem;
+        margin: 16px 0;
+    }
+
+    #home {
+        height: 80vh;
+        padding: 10px;
+    }
+
+    #about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .about {
+        left: 0;
+        top: 20px;
+    }
+
+    .abouttext1 {
+        font-size: 2rem;
+    }
+
+    .abouttext2 {
+        font-size: 0.9rem;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .news-image {
+        width: 100%;
+        height: auto;
+    }
+
+    #appointment {
+        justify-content: center;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .sectiontopic {
+        font-size: 2rem;
+    }
+}
