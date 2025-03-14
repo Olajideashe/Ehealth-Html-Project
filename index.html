@@ -7,45 +7,37 @@
     <title>E-Health: Innovative health care solution</title>
     <script src="https://kit.fontawesome.com/8ea2e79f80.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <!--header section  -->
     <header>
-        <div>
-            <h1>Welcome to E-health care solution</h1>
+        <div class="hori topnav">
+            <h1 class="graytext">Welcome to E-health care solution</h1>
 
-            <div>
-                <p><span><i class="fa-solid fa-phone"></i></span> +2349043051293</p>
-                <p><span><i class="fa-solid fa-calendar-plus"></i></span> 6:00am - 10:00pm (Mon - Fri)</p>
-                <p><span><i class="fa-solid fa-envelope"></i></span> info@ehealth.com</p>
+            <div class="hori graytext mobilehori">
+                <p class="info"><span><i class="fa-solid fa-phone"></i></span> +2349043051293</p>
+                <p class="info"><span><i class="fa-solid fa-calendar-plus"></i></span> 6:00am - 10:00pm (Mon - Fri)</p>
+                <p class="info" id="remove"><span><i class="fa-solid fa-envelope"></i></span> info@ehealth.com</p>
             </div>
         </div>
-        <nav>
-            <h3>E-Health</h3>
+        <nav class="hori topnav">
+            <h3 class="brandlogo"><span>E</span>-Health</h3>
 
             <!-- nav menu item -->
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#doctors">Doctors</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#appointment">Make an appointment</a></li>
-                <li><a href="#contact">Contact</a></li>
-                
-            </ul>
-        </nav>
-        <nav>
-            <h3>E-Health</h3>
+            <ul class="hori">
+                <li class="navitem"><a href="#home">Home</a></li>
+                <li class="navitem"><a href="#about">About Us</a></li>
+                <li class="navitem"><a href="#doctors">Doctors</a></li>
+                <li class="navitem"><a href="#news">News</a></li>
+                <li class="navitem"><a href="#contact">Contact</a></li>
+                <li class="navitem" id="app"><a href="#appointment">Make an appointment</a></li>
 
-            <!-- nav menu item -->
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/about.html">About Us</a></li>
-                <li><a href="./pages/services.html">Services</a></li>
-                <li><a href="./pages/blogs.html">Blogs</a></li>
-                <li><a href="./pages/contacts.html">Contact</a></li>
-                
             </ul>
         </nav>
     </header>
@@ -55,110 +47,123 @@
         <!-- home section -->
         <section id="home">
             <div>
-                <p>Best Health Care Solution</p>
-                <p>Health Care At Your Door Step</p>
-                <button>Learn More</button>
+                <p class="hometext1">Best Health Care Solution</p>
+                <p class="hometext2">Health Care At Your Door Step</p>
+                <button id="homebutton">Learn More</button>
             </div>
         </section>
         <!-- about us section -->
         <section id="about">
-            <!-- Left Div -->
-            <div>
-                <p>Welcome to Your Health Center</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum sapiente dolorum ullam
-                    exercitationem a nulla cumque possimus numquam dicta quis perspiciatis, rerum, aperiam doloremque
-                    voluptatem eaque eligendi blanditiis maxime neque?</p>
-                <div>
+            <div class="about">
+                <h1 class="abouttext1">Welcome to Your <span>H</span>ealth</h1>
+                <h1 class="abouttext1">Center</h1>
+                <pre class="abouttext2 color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum sapiente dolorum ullam
+exercitationem a nulla cumque possimus numquam dicta quis perspiciatis, rerum, aperiam doloremque
+voluptatem eaque eligendi blanditiis maxime neque?</pre>
+                <div class="details">
                     <img src="./images/author-image.jpg" alt="">
                     <div>
-                        <p>Dr Neil Jackson</p>
-                        <p>General Principal</p>
+                        <h4>Dr Neil Jackson</h4>
+                        <p class="color">General Principal</p>
                     </div>
                 </div>
             </div>
-            <!-- Right Div -->
-            <div>
-                <img src="./images/about-bg.jpg" alt="">
-            </div>
         </section>
         <!-- Doctors Section -->
-        <section id="doctors">
-            <h2>Our Doctors</h2>
-            <div>
+        <section id="doctors" class="topnav">
+            <h1 class="sectiontopic">Our Doctors</h1>
+            <div class="hori">
                 <div>
                     <img src="./images/team-image1.jpg" alt="Dr Nate Boston and a little girl patient ">
-                    <div>
-                        <h3>Nate Boston</h3>
-                        <p>General Doctor</p>
+                    <div class="doctorinfo">
+                        <h3 class="topic">Nate Boston</h3>
+                        <p class="color">General Doctor</p>
                         <hr />
-                        <p><span><i class="fa-solid fa-phone"></i></span> +2348087365178</p>
-                        <p><span><i class="fa-solid fa-envelope"></i></span> general@ehealth.com</p>
+                        <p class="color"><span><i class="fa-solid fa-phone"></i></span> +2348087365178</p>
+                        <p class="color"><span><i class="fa-solid fa-envelope"></i></span> general@ehealth.com</p>
                     </div>
                 </div>
                 <div>
                     <img src="./images/team-image2.jpg" alt="Dr Jason Stewart and an older woman patient">
-                    <div>
-                        <h3>Jason Stewart</h3>
-                        <p>Pregnancy</p>
+                    <div class="doctorinfo">
+                        <h3 class="topic">Jason Stewart</h3>
+                        <p class="color">Pregnancy</p>
                         <hr />
-                        <p><span><i class="fa-solid fa-phone"></i></span> +2349058243408</p>
-                        <p><span><i class="fa-solid fa-envelope"></i></span> pregnancy@ehealth.com</p>
+                        <p class="color"><span><i class="fa-solid fa-phone"></i></span> +2349058243408</p>
+                        <p class="color"><span><i class="fa-solid fa-envelope"></i></span> pregnancy@ehealth.com</p>
                     </div>
                 </div>
                 <div>
                     <img src="./images/team-image3.jpg" alt="Dr Miasha Nakahara">
-                    <div>
-                        <h3>Dr Miasha Nakahara</h3>
-                        <p>Cardiology</p>
+                    <div class="doctorinfo">
+                        <h3 class="topic">Dr Miasha Nakahara</h3>
+                        <p class="color">Cardiology</p>
                         <hr />
-                        <p><span><i class="fa-solid fa-phone"></i></span> +2348087365289</p>
-                        <p><span><i class="fa-solid fa-envelope"></i></span> cardiology@ehealth.com</p>
+                        <p class="color"><span><i class="fa-solid fa-phone"></i></span> +2348087365289</p>
+                        <p class="color"><span><i class="fa-solid fa-envelope"></i></span> cardiology@ehealth.com</p>
                     </div>
                 </div>
             </div>
 
         </section>
         <!-- News Section -->
-        <section id="news">
-            <h2>Latest News</h2>
-            <div>
+        <section id="news" class="topnav">
+            <h2 class="sectiontopic latestnews">Latest News</h2>
+            <div class="hori">
                 <div>
-                    <img src="./images/news-image1.jpg" alt="typing on keyboard">
-                    <p>March 07, 2025</p>
-                    <h3>About Amazing Technology</h3>
-                    <p>Amazing Technology is amazing</p>
-                    <div>
+                    <div class="news">
+                        <img src="./images/news-image1.jpg" alt="typing on keyboard" class="news-image">
+                        <p class="space color">March 07, 2025</p>
+                        <pre class="space topic">About Amazing 
+Technology</pre>
+                        <pre class="space color">Amazing Technology
+is amazing</pre>
+                    </div>
+                    <hr />
+                    <div class="details">
                         <img src="./images/author-image.jpg" alt="">
                         <div>
                             <h5>Jeremie Carlson</h5>
-                            <p>CEO / Founder</p>
+                            <p class="color">CEO / Founder</p>
                         </div>
                     </div>
 
                 </div>
                 <div>
-                    <img src="./images/news-image2.jpg" alt="Dr Jason Stewart and a patient">
-                    <p>February 20, 2025</p>
-                    <h3>Introducing a new healing process</h3>
-                    <p>A new healing process</p>
-                    <div>
+                    <div class="news">
+                        <img src="./images/news-image2.jpg" alt="Dr Jason Stewart and a patient" class="news-image">
+                        <p class="space color">February 20, 2025</p>
+                        <pre class="space topic">Introducing a new 
+healing process</pre>
+                        <pre class="space color">A new healing process 
+was introduced to the hospital</pre>
+                        </p>
+                    </div>
+                    <hr />
+                    <div class="details">
                         <img src="./images/author-image.jpg" alt="">
                         <div>
                             <h5>Jason Stewart</h5>
-                            <p>General Director</p>
+                            <p class="color">General Director</p>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <img src="./images/news-image3.jpg" alt="A female doctor and a female patient">
-                    <p>January 27, 2025</p>
-                    <h3>Review Annual Medical Research</h3>
-                    <p>Medical researches done during the year were reviewed</p>
-                    <div>
+                    <div class="news">
+                        <img src="./images/news-image3.jpg" alt="A female doctor and a female patient"
+                            class="news-image">
+                        <p class="space color">January 27, 2025</p>
+                        <pre class="space topic">Review Annual Medical 
+Research</pre>
+                        <pre class="space color">Medical researches done
+during the year were reviewed</pre>
+                    </div>
+                    <hr />
+                    <div class="details">
                         <img src="./images/author-image.jpg" alt="">
                         <div>
                             <h5>Andrio Abero</h5>
-                            <p>Online Advertising</p>
+                            <p class="color">Online Advertising</p>
                         </div>
                     </div>
                 </div>
@@ -166,13 +171,9 @@
         </section>
         <!--Appointment Section  -->
         <section id="appointment">
-            <!-- left div -->
-            <div>
-                <img src="./images/appointment-image.jpg" alt="a male doctor">
-            </div>
             <!-- right div -->
-            <div>
-                <h2>Make an appointment</h2>
+            <div class="appointment">
+                <h2 class="sectiontopic">Make an appointment</h2>
 
                 <form action="#">
                     <div>
@@ -200,29 +201,56 @@
                             </select>
                         </div>
                         <div>
-                         <label for="Phone Number">Phone Number</label>
-                         <input type="tel" placeholder="e.g 09048564789">
-                       </div>
-                       <div>
-                         <label for="Additional Message">Additional Message</label>
-                         <textarea name="" id="" cols="12" rows="5" placeholder="Message"></textarea>
-                       </div>
-                       <div>
-                         <input type="button" value="Book Appointment">
-                       </div>
+                            <label for="Phone Number">Phone Number</label>
+                            <input type="tel" placeholder="e.g 09048564789">
+                        </div>
+                        <div>
+                            <label for="Additional Message">Additional Message</label>
+                            <textarea name="" id="" cols="12" rows="5" placeholder="Message"></textarea>
+                        </div>
+                        <div>
+                            <input type="button" value="Book Appointment">
+                        </div>
                     </div>
                 </form>
 
             </div>
         </section>
         <!-- Contact us -->
-         <section id="contact">
+        <section id="contact">
             <!-- google map -->
-            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=230 herbert&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-googlemap.com">embed google map</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
-            <div>
-                <div>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                        marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=230 herbert&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                        href="https://embed-googlemap.com">embed google map</a></div>
+                <style>
+                    .mapouter {
+                        position: relative;
+                        text-align: right;
+                        width: 100%;
+                        height: 400px;
+                    }
+
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        width: 100%;
+                        height: 400px;
+                    }
+
+                    .gmap_iframe {
+                        height: 400px !important;
+                    }
+                </style>
+            </div>
+            <div class="hori contact">
+                <div class="topnav">
                     <h2>Contact Info</h2>
-                    <p>if you have any questions and enquires , our contact information are down below</p>
+                    <pre class="space color">if you have any 
+questions and enquires , 
+our contact information 
+are down below</pre>
                     <div>
                         <p><span><i class="fa-solid fa-phone"></i></span> +2349043051293</p>
                     </div>
@@ -232,14 +260,14 @@
                 </div>
                 <div>
                     <h2>Latest News</h2>
-                    <div>
+                    <div class="details">
                         <img src="./images/news-image.jpg" alt="">
                         <div>
                             <h4>Amazing Technology</h4>
                             <p>March 08, 2025</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="details">
                         <img src="./images/news-image.jpg" alt="">
                         <div>
                             <h4>New Healing Process</h4>
@@ -247,29 +275,33 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="openhrs">
                     <h2>Opening Hours</h2>
-                    <p>Monday - Friday  06:00 am - 10:00 pm</p>
-                    <p>Saturday  09:00 am - 08:00 pm</p>
-                    <p>Sunday Closed</p>
+                    <div class="space">
+                        <p>Monday - Friday 06:00 am - 10:00 pm</p>
+                        <p>Saturday 09:00 am - 08:00 pm</p>
+                        <p>Sunday Closed</p>
+                    </div>
                     <div>
-                        <p><span><i class="fa-brands fa-square-facebook"></i></span>       <span><i class="fa-brands fa-twitter"></i></span>       <span><i class="fa-brands fa-instagram"></i></span></p>
+                        <p><span><i class="fa-brands fa-square-facebook"></i></span> <span><i
+                                    class="fa-brands fa-twitter"></i></span> <span><i
+                                    class="fa-brands fa-instagram"></i></span></p>
                     </div>
                 </div>
             </div>
-         </section>
+        </section>
     </main>
 
     <!-- footer section -->
     <footer>
-        <div>
+        <div class="hori topnav">
             <p>Copyright <span><i class="fa-regular fa-copyright"></i></span> 2025 E-Health | Design: Olajide</p>
 
-            <div>
-                <p>Laboratory Tests</p>
-                <p>Departments</p>
-                <p>Insurance Policy</p>
-                <p>Careers</p>
+            <div class="hori">
+                <p class="info">Laboratory Tests</p>
+                <p class="info">Departments</p>
+                <p class="info">Insurance Policy</p>
+                <p class="info">Careers</p>
             </div>
         </div>
     </footer>
