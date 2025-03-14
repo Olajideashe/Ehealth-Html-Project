@@ -171,49 +171,55 @@ during the year were reviewed</pre>
         </section>
         <!--Appointment Section  -->
         <section id="appointment">
-            <!-- right div -->
-            <div class="appointment">
-                <h2 class="sectiontopic">Make an appointment</h2>
+            <div class="hori">
+                <!-- left div -->
+                <div class="app img">
+                    <img src="./images/appointment-image.jpg" alt="doctor standing">
+                </div>
+                <!-- right div -->
+                <div class="appointment">
+                    <h2 class="sectiontopic">Make an appointment</h2>
 
-                <form action="#">
-                    <div>
+                    <form action="#">
                         <div>
-                            <label for="Name">Name</label>
-                            <input type="text" placeholder="Full name">
+                            <div>
+                                <label for="Name">Name</label>
+                                <input type="text" placeholder="Full name">
+                            </div>
+                            <div>
+                                <label for="Email">Email</label>
+                                <input type="email" placeholder="e.g john@gmail.com">
+                            </div>
                         </div>
                         <div>
-                            <label for="Email">Email</label>
-                            <input type="email" placeholder="e.g john@gmail.com">
+                            <div>
+                                <label for="Date">Select Date</label>
+                                <input type="date" placeholder="mm/dd/yyyy">
+                            </div>
+                            <div>
+                                <label for="Department">Select Department</label>
+                                <select name="Department">
+                                    <option value="General Consult">General Consult</option>
+                                    <option value="General Health">General Health</option>
+                                    <option value="Pregnancy">Pregnancy</option>
+                                    <option value="Cardiology">Cardiology</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="Phone Number">Phone Number</label>
+                                <input type="tel" placeholder="e.g 09048564789">
+                            </div>
+                            <div>
+                                <label for="Additional Message">Additional Message</label>
+                                <textarea name="" id="" cols="12" rows="5" placeholder="Message"></textarea>
+                            </div>
+                            <div>
+                                <input type="button" value="Book Appointment">
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <div>
-                            <label for="Date">Select Date</label>
-                            <input type="date" placeholder="mm/dd/yyyy">
-                        </div>
-                        <div>
-                            <label for="Department">Select Department</label>
-                            <select name="Department">
-                                <option value="General Consult">General Consult</option>
-                                <option value="General Health">General Health</option>
-                                <option value="Pregnancy">Pregnancy</option>
-                                <option value="Cardiology">Cardiology</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="Phone Number">Phone Number</label>
-                            <input type="tel" placeholder="e.g 09048564789">
-                        </div>
-                        <div>
-                            <label for="Additional Message">Additional Message</label>
-                            <textarea name="" id="" cols="12" rows="5" placeholder="Message"></textarea>
-                        </div>
-                        <div>
-                            <input type="button" value="Book Appointment">
-                        </div>
-                    </div>
-                </form>
+                    </form>
 
+                </div>
             </div>
         </section>
         <!-- Contact us -->

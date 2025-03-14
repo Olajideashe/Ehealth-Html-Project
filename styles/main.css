@@ -202,9 +202,6 @@
 }
 
 #appointment {
-    background-image: url(../images/appointment-image.jpg);
-    background-size: cover;
-    min-height: 92vh;
     display: flex;
     justify-content: right;
     align-items: right;
@@ -212,6 +209,7 @@
     text-align: center;
     padding: 20px
 }
+
 .appointment form {
     display: flex;
     flex-direction: column;
@@ -224,9 +222,10 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.appointment input, .appointment button {
+.appointment input,
+.appointment button {
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #rgb(29, 159, 66);
     border-radius: 5px;
     font-size: 16px;
 }
@@ -238,15 +237,13 @@
 
 .appointment button {
     background: #5cb85c;
-    color: white;
+    color: rgb(29, 159, 66);
     font-weight: bold;
     cursor: pointer;
     border: none;
 }
 
-.appointment button:hover {
-    background: #4cae4c;
-}
+
 
 
 section {
